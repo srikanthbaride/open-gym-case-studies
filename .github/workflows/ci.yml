@@ -10,26 +10,32 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.10'
           cache: 'pip'
-      # 🧰 System dependencies for Box2D (LunarLander)
-- name: Install system dependencies
-  run: |
-    sudo apt-get update
-    sudo apt-get install -y swig
 
-- name: Install deps
+      # 🧰 System dependencies for Box2D (LunarLander)
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y swig
+
+      # 🧩 Python dependencies
+      - name: Install deps
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
       - name: Smoke trains (short)
         run: |
           make taxi-smoke
           make lander-smoke
+
       - name: Tests
         run: pytest -q
+
       - name: Upload run artifacts
         if: always()
         uses: actions/upload-artifact@v4
