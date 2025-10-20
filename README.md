@@ -7,7 +7,7 @@
 [![Last Commit](https://img.shields.io/github/last-commit/srikanthbaride/open-gym-case-studies)](https://github.com/srikanthbaride/open-gym-case-studies/commits/main)
 [![License](https://img.shields.io/badge/License-Educational-lightgrey.svg)](#license)
 
-This repository contains **two real-world-motivated case studies** implemented with **Gymnasium (OpenAI Gym)**, aligned with the reinforcement learning chapters (Bandits → MC → TD → Q-learning/SARSA) in your textbook. Each case study includes **reproducible training scripts**, **CSV logs**, **plots**, and **pytest smoke tests**. Extensions are scaffolded for **Deep RL (DQN / Actor–Critic)**.
+This repository contains **two real-world-motivated case studies** implemented with **Gymnasium (OpenAI Gym)**, aligned with the reinforcement learning chapters (Bandits → MC → TD → Q-learning/SARSA) in my textbook. Each case study includes **reproducible training scripts**, **CSV logs**, **plots**, and **pytest smoke tests**. Extensions are scaffolded for **Deep RL (DQN / Actor–Critic)**.
 
 ---
 
