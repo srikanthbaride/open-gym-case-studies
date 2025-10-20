@@ -1,0 +1,7 @@
+gymnasium>=0.29.1
+numpy>=1.26
+matplotlib>=3.8
+box2d-py>=2.3.5
+pygame>=2.5
+pytest>=8.0
+pandas>=2.1

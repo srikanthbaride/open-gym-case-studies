@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+.env/
+
+# Runs & artifacts
+runs/
+*.png
+*.csv
+*.npy
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

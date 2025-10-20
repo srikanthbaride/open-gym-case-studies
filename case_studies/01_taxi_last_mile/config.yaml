@@ -1,0 +1,9 @@
+env_id: "Taxi-v3"
+episodes: 4000
+gamma: 0.99
+alpha: 0.1
+epsilon_start: 1.0
+epsilon_end: 0.05
+epsilon_decay_episodes: 3000
+eval_every: 200
+seed: 123
