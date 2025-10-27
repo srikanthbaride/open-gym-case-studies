@@ -1,4 +1,4 @@
-# 📦 Open Gym Case Studies — Logistics & Robotics (classical RL + Deep RL hooks)
+# 📦 Open Gym Case Studies — Logistics & Robotics 
 
 > _Textbook-aligned case studies for teaching Q-learning/SARSA and extending to DQN/Actor–Critic._
 
