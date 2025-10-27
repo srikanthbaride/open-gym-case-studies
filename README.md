@@ -106,19 +106,23 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.
 
 ---
 
-## How to publish to GitHub
+## 📚 How to Cite
 
-1. Create an empty repo (e.g., `open-gym-case-studies`) on GitHub.
-2. On your machine:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: two Gym case studies + CI"
-   git branch -M main
-   git remote add origin https://github.com/srikanthbaride/open-gym-case-studies.git
-   git push -u origin main
-   ```
-3. Update README badge links: replace `srikanthbaride/open-gym-case-studies` in the badge URLs with your GitHub org/repo.
+If you use this code or the accompanying book in your research or teaching, please cite:
+
+**Book (forthcoming):**
+```bibtex
+@book{baride2025rlexplained,
+  author    = {Srikanth Baride and Rodrigue Rizk and K. C. Santosh},
+  title     = {Reinforcement Learning Explained},
+  publisher = {CRC Press | Taylor \& Francis Group},
+  year      = {2025},
+  isbn      = {9781041252993},
+  note      = {Accepted for publication; preprint available at \url{https://github.com/srikanthbaride/rl-explained-preprint}}
+}
+
+```
+
 
 ---
 
