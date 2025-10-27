@@ -153,3 +153,21 @@ to the above authors and the textbook citation is included.
 
 For questions or permissions beyond classroom use, please contact  
 the authors through the University of South Dakota AI Research Lab.
+
+
+## 📚 How to Cite
+
+If you use this code or the accompanying book in your research or teaching, please cite:
+
+**Book (forthcoming):**
+```bibtex
+@book{baride2025rlexplained,
+  author    = {Srikanth Baride and Rodrigue Rizk and K. C. Santosh},
+  title     = {Reinforcement Learning Explained},
+  publisher = {CRC Press | Taylor \& Francis Group},
+  year      = {2025},
+  isbn      = {9781041252993},
+  note      = {Accepted for publication; preprint available at \url{https://github.com/srikanthbaride/rl-explained-preprint}}
+}
+
+```
