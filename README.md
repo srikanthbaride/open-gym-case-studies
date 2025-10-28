@@ -113,7 +113,7 @@ If you use this code or the accompanying book in your research or teaching, plea
 **Book (forthcoming):**
 ```bibtex
 @book{baride2025rlexplained,
-  author    = {Srikanth Baride and Rodrigue Rizk and K. C. Santosh},
+  author    = {Srikanth Baride and Rodrigue Rizk and KC Santosh},
   title     = {Reinforcement Learning Explained},
   publisher = {CRC Press | Taylor \& Francis Group},
   year      = {2025},
@@ -135,7 +135,7 @@ Educational use; adapt as needed for your textbook’s distribution terms.
 
 ## Copyright & Attribution
 
-© 2025 Dr. Srikanth Baride, Dr. Rodrigue Rizk, and Prof. K.C. Santosh.  
+© 2025 Dr. Srikanth Baride, Dr. Rodrigue Rizk, and Prof. KC Santosh.  
 All rights reserved. This repository accompanies the textbook:
 
 > **_Reinforcement Learning Explained_**  
