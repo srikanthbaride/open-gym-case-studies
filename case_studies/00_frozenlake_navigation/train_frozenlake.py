@@ -13,7 +13,6 @@ def main():
     ap.add_argument("--alpha", type=float, default=0.1)
     ap.add_argument("--slippery", type=int, default=1)
     ap.add_argument("--seed", type=int, default=123)
-    ap.add_argument("--render_eval", action="store_true")
     args = ap.parse_args()
 
     rng = np.random.default_rng(args.seed)
@@ -35,7 +34,9 @@ def main():
         eps = sched.epsilon(ep)
         a = choose_action(Q, s, eps, nA, rng) if args.algo == "sarsa" else None
 
+        steps = 0
         while not done:
+            steps += 1
             if args.algo == "qlearning":
                 a = choose_action(Q, s, eps, nA, rng)
             s2, r, terminated, truncated, info = env.step(a)
@@ -60,9 +61,11 @@ def main():
             print(f"ep={ep+1} avg_return(last100)={avg:.3f} eps={eps:.3f}")
 
     np.save(os.path.join(logdir, "Q.npy"), Q)
-    # Greedy policy for evaluation
     policy = np.argmax(Q, axis=1).astype(np.int64)
     np.save(os.path.join(logdir, "policy.npy"), policy)
 
+    # brief final line for logs
+    avg_last100 = np.mean(returns[-100:]) if len(returns) >= 100 else np.mean(returns)
+    print(f"TRAIN_DONE algo={args.algo} slip={args.slippery} seed={args.seed} avg_last100={avg_last100:.3f}")
 if __name__ == "__main__":
     main()
