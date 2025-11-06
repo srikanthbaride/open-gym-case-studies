@@ -59,6 +59,7 @@ open-gym-case-studies/
 │  ├─ utils.py
 │  └─ plotting.py
 ├─ case_studies/
+|  ├─ 00_frozenlake_navigation/ # Tabular SARSA & Q-Learning
 │  ├─ 01_taxi_last_mile/        # Q-learning, SARSA, evaluate, plots
 │  └─ 02_lunar_lander_drone/    # tabular baselines + DQN scaffold
 ├─ tests/                        # pytest smoke tests
